@@ -1,6 +1,6 @@
 {
   "name" : "Node & TS + postgres"
-  "dockerfile" : "Dockerfile"
+  "dockerFile" : "Dockerfile"
   "settings" : {
     "editor.lineNumbers" : "relative",
     "vim.hlsearch" : true,
