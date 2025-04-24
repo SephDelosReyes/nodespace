@@ -48,8 +48,8 @@
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
         "vscodevim.vim",
-        "rose-pine.theme"
-      ]    
+        "mvllow.rose-pine"
+      ]
     }
   }
 }
