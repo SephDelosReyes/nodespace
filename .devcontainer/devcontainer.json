@@ -1,51 +1,55 @@
 {
   "name" : "Node & TS + postgres",
   "dockerFile" : "Dockerfile",
-  "settings" : {
-    "editor.lineNumbers" : "relative",
-    "vim.hlsearch" : true,
-    "vim.leader" : "<Space>",
-    "vim.useSystemClipboard" : true,
-    "vim.normalModeKeyBindingsNonRecursive" : [
-      {
-        "before" : ["<Space>", "b"],
-        "commands" : ["editor.action.toggleBreakpoint"]
-      }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive" : [
-      {
-        "before" : ["<C-j>"],
-        "commands" : ["editor.action.moveLinesDownAction"]
+  "customizations": {
+    "vscode": {
+      "settings" : {
+        "editor.lineNumbers" : "relative",
+        "vim.hlsearch" : true,
+        "vim.leader" : "<Space>",
+        "vim.useSystemClipboard" : true,
+        "vim.normalModeKeyBindingsNonRecursive" : [
+          {
+            "before" : ["<Space>", "b"],
+            "commands" : ["editor.action.toggleBreakpoint"]
+          }
+        ],
+        "vim.visualModeKeyBindingsNonRecursive" : [
+          {
+            "before" : ["<C-j>"],
+            "commands" : ["editor.action.moveLinesDownAction"]
+          },
+          {
+            "before" : ["<C-k>"],
+            "commands" : ["editor.action.moveLinesUpAction"]
+          },
+          {
+            "before" : [">"],
+            "commands" : ["editor.action.indentLines"]
+          },
+          {
+            "before" : ["<"],
+            "commands" : ["editor.action.outdentLines"]
+          }
+        ],
+        "vim.incsearch" : true,
+        "vim.scrolloff" : 10,
+        "workbench.colorTheme" : "Rosé Pine",
+        "workbench.colorCustomizations" : {
+          "statusBar.background" : "#B48EAD",
+          "statusBar.noFolderBackground" : "#B48EAD",
+          "statusBar.debuggingBackground" : "#B48EAD",
+          "statusBar.background" : "#000",
+          "statusBar.debuggingForeground" : "#000"
+        }
       },
-      {
-        "before" : ["<C-k>"],
-        "commands" : ["editor.action.moveLinesUpAction"]
-      },
-      {
-        "before" : [">"],
-        "commands" : ["editor.action.indentLines"]
-      },
-      {
-        "before" : ["<"],
-        "commands" : ["editor.action.outdentLines"]
-      }
-    ],
-    "vim.incsearch" : true,
-    "vim.scrolloff" : 10,
-    "workbench.colorTheme" : "Rosé Pine",
-    "workbench.colorCustomizations" : {
-      "statusBar.background" : "#B48EAD",
-      "statusBar.noFolderBackground" : "#B48EAD",
-      "statusBar.debuggingBackground" : "#B48EAD",
-      "statusBar.background" : "#000",
-      "statusBar.debuggingForeground" : "#000"
+      "extensions" : [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "vscodevim.vim",
+        "rose-pine.theme"
+      ]    
     }
-  },
-  "extensions" : [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "bradlc.vscode-tailwindcss",
-    "vscodevim.vim",
-    "rose-pine.theme"
-  ]
+  }
 }
