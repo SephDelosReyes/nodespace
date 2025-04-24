@@ -47,6 +47,5 @@
     "bradlc.vscode-tailwindcss",
     "vscodevim.vim",
     "rose-pine.theme"
-  ],
-  "postCreateCommand" : "npm install"
+  ]
 }
